@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fetch = require('node-fetch')
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN_JAN);
 let cursed = "k̶i̸l̴l̷ ̵p̷u̵r̶g̶e̵ ̵k̶i̴l̷l̴ ̷m̵y̷s̵t̶e̵r̶i̵o̸u̷s̶ ̸m̶i̵s̸c̴h̶e̵v̶i̷o̶u̸s̵ ̴k̷i̴l̵l̸ ̴p̵u̴r̴g̴e̶ ̸k̶i̷l̶l̷ ̴t̴h̵e̴m̶ ̴a̴l̴l̷ ̴k̸i̸l̷l̷ ̸w̷i̷t̵h̸o̸u̷t̵ ̶m̷e̴r̷c̵y̷ ̸k̶i̵l̷l̷ ̸k̵i̶l̵l̵ ̴k̶i̵l̶l̷ ̶p̴u̴r̶g̶e̶ ̴k̸i̶l̵l̸ ̶m̷y̶s̷t̷e̷r̸i̴o̴u̶s̷ ̷m̷i̵s̵c̴h̵e̷v̵i̷o̵u̸s̴ ̷k̷i̷l̷l̷ ̵p̸u̷r̸g̸e̷"
 let shuffled
 
