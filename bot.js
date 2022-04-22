@@ -9,51 +9,51 @@ let shuffled
 //Purge Channel ID: 832123847733936214
 //Purge Message ID: 832132846000275477
 client.on('ready', async () => {
-	console.log('Ready!');
+	console.log('Hi :)');
 	
-	let purge_channel = await client.channels.fetch('832123847733936214');
-	let purge_message = await purge_channel.messages.fetch('832132846000275477')
+	// let purge_channel = await client.channels.fetch('832123847733936214');
+	// let purge_message = await purge_channel.messages.fetch('832132846000275477')
 
-	setInterval(async () => {
-		shuffled = cursed.split('').sort(function(){return 0.5-Math.random()}).join('');
-	}, 10000)
+	// setInterval(async () => {
+	// 	shuffled = cursed.split('').sort(function(){return 0.5-Math.random()}).join('');
+	// }, 10000)
 
-	setInterval(async () => {
-		let embed = await getEmbed();
+	// setInterval(async () => {
+	// 	let embed = await getEmbed();
 		
-		var deadline = new Date("04/18/2021")
-		var currentTime = new Date()
-		var delta =	(deadline-currentTime) / 1000
-		var days = Math.floor(delta / 86400);
-		delta -= days * 86400;
-		var hours = Math.floor(delta / 3600) % 24;
-		delta -= hours * 3600;
-		var minutes = Math.floor(delta / 60) % 60;
-		delta -= minutes * 60;
-		var seconds = Math.floor(delta % 60); 
+	// 	var deadline = new Date("04/18/2021")
+	// 	var currentTime = new Date()
+	// 	var delta =	(deadline-currentTime) / 1000
+	// 	var days = Math.floor(delta / 86400);
+	// 	delta -= days * 86400;
+	// 	var hours = Math.floor(delta / 3600) % 24;
+	// 	delta -= hours * 3600;
+	// 	var minutes = Math.floor(delta / 60) % 60;
+	// 	delta -= minutes * 60;
+	// 	var seconds = Math.floor(delta % 60); 
 
-		//console.log(days + "  " + hours + "  " + minutes + "  " + seconds)
+	// 	//console.log(days + "  " + hours + "  " + minutes + "  " + seconds)
 
-		if (seconds == 0 || seconds == 30)
-			embed.setDescription(cursed)
-		// if (seconds == 10 || seconds == 20 || seconds == 30 || seconds == 40 || seconds == 50)
-		else
-			embed.setDescription(shuffled)
+	// 	if (seconds == 0 || seconds == 30)
+	// 		embed.setDescription(cursed)
+	// 	// if (seconds == 10 || seconds == 20 || seconds == 30 || seconds == 40 || seconds == 50)
+	// 	else
+	// 		embed.setDescription(shuffled)
 	
 
-		embed.addFields(
-			{name: '\u200B', value: "```fix\n"+days + " d̶a̶y̴s  " + hours + " h̴o̶u̷r̶s  " + minutes + " m̸i̴n̵u̵t̷e̸s  " + seconds + " s̷e̷c̶o̵n̸d̸s   \n```"},
-			{name: '\u200B', value: "s̷t̵a̴r̴e̷ ̸a̶t̸ ̵i̶t̵ ̸f̵o̷r̶ ̸t̵o̴o̵ ̸l̵o̴n̴g̸ ̷a̵n̵d̴ ̸y̵o̸u̷ ̴m̶i̸g̷h̷t̵ ̵g̸e̸t̸ ̸l̴o̶s̵t̷"}
-		)
+	// 	embed.addFields(
+	// 		{name: '\u200B', value: "```fix\n"+days + " d̶a̶y̴s  " + hours + " h̴o̶u̷r̶s  " + minutes + " m̸i̴n̵u̵t̷e̸s  " + seconds + " s̷e̷c̶o̵n̸d̸s   \n```"},
+	// 		{name: '\u200B', value: "s̷t̵a̴r̴e̷ ̸a̶t̸ ̵i̶t̵ ̸f̵o̷r̶ ̸t̵o̴o̵ ̸l̵o̴n̴g̸ ̷a̵n̵d̴ ̸y̵o̸u̷ ̴m̶i̸g̷h̷t̵ ̵g̸e̸t̸ ̸l̴o̶s̵t̷"}
+	// 	)
 
 		
-		purge_message.edit(embed)
+	// 	purge_message.edit(embed)
 
-		if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
-			console.log("timer finished")
-			return;
-		}
-	}, 5000)
+	// 	if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
+	// 		console.log("timer finished")
+	// 		return;
+	// 	}
+	// }, 5000)
 });
 
 let prefix = '$'
